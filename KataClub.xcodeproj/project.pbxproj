@@ -14,6 +14,7 @@
 		3EC948A92790B44D00B68C96 /* KataClubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC948A82790B44D00B68C96 /* KataClubTests.swift */; };
 		3EC948B32790B44D00B68C96 /* KataClubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC948B22790B44D00B68C96 /* KataClubUITests.swift */; };
 		3EC948B52790B44D00B68C96 /* KataClubUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC948B42790B44D00B68C96 /* KataClubUITestsLaunchTests.swift */; };
+		3EC948C22790B61F00B68C96 /* SumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC948C12790B61F00B68C96 /* SumView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		3EC948AE2790B44D00B68C96 /* KataClubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KataClubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EC948B22790B44D00B68C96 /* KataClubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataClubUITests.swift; sourceTree = "<group>"; };
 		3EC948B42790B44D00B68C96 /* KataClubUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataClubUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3EC948C12790B61F00B68C96 /* SumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				3EC948972790B44C00B68C96 /* KataClubApp.swift */,
 				3EC948992790B44C00B68C96 /* ContentView.swift */,
+				3EC948C12790B61F00B68C96 /* SumView.swift */,
 				3EC9489B2790B44D00B68C96 /* Assets.xcassets */,
 				3EC9489D2790B44D00B68C96 /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EC9489A2790B44C00B68C96 /* ContentView.swift in Sources */,
+				3EC948C22790B61F00B68C96 /* SumView.swift in Sources */,
 				3EC948982790B44C00B68C96 /* KataClubApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
