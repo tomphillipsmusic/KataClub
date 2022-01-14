@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E21A4DA2791F8CC009075A0 /* DynamicTriangleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E21A4D92791F8CC009075A0 /* DynamicTriangleTests.swift */; };
 		3EC948982790B44C00B68C96 /* KataClubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC948972790B44C00B68C96 /* KataClubApp.swift */; };
 		3EC9489A2790B44C00B68C96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC948992790B44C00B68C96 /* ContentView.swift */; };
 		3EC9489C2790B44D00B68C96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EC9489B2790B44D00B68C96 /* Assets.xcassets */; };
@@ -14,7 +15,7 @@
 		3EC948A92790B44D00B68C96 /* KataClubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC948A82790B44D00B68C96 /* KataClubTests.swift */; };
 		3EC948B32790B44D00B68C96 /* KataClubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC948B22790B44D00B68C96 /* KataClubUITests.swift */; };
 		3EC948B52790B44D00B68C96 /* KataClubUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC948B42790B44D00B68C96 /* KataClubUITestsLaunchTests.swift */; };
-		6D19F1CC2790BACA00D0CE14 /* PyramidOfOnesInstructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19F1CB2790BACA00D0CE14 /* PyramidOfOnesInstructions.swift */; };
+		6D19F1CC2790BACA00D0CE14 /* DynamicTriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19F1CB2790BACA00D0CE14 /* DynamicTriangleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E21A4D92791F8CC009075A0 /* DynamicTriangleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTriangleTests.swift; sourceTree = "<group>"; };
 		3EC948942790B44C00B68C96 /* KataClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KataClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EC948972790B44C00B68C96 /* KataClubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataClubApp.swift; sourceTree = "<group>"; };
 		3EC948992790B44C00B68C96 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,7 +47,7 @@
 		3EC948AE2790B44D00B68C96 /* KataClubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KataClubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EC948B22790B44D00B68C96 /* KataClubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataClubUITests.swift; sourceTree = "<group>"; };
 		3EC948B42790B44D00B68C96 /* KataClubUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataClubUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		6D19F1CB2790BACA00D0CE14 /* PyramidOfOnesInstructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PyramidOfOnesInstructions.swift; sourceTree = "<group>"; };
+		6D19F1CB2790BACA00D0CE14 /* DynamicTriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTriangleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +102,7 @@
 				3EC948992790B44C00B68C96 /* ContentView.swift */,
 				3EC9489B2790B44D00B68C96 /* Assets.xcassets */,
 				3EC9489D2790B44D00B68C96 /* Preview Content */,
-				6D19F1CB2790BACA00D0CE14 /* PyramidOfOnesInstructions.swift */,
+				6D19F1CB2790BACA00D0CE14 /* DynamicTriangleView.swift */,
 			);
 			path = KataClub;
 			sourceTree = "<group>";
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				3EC948A82790B44D00B68C96 /* KataClubTests.swift */,
+				3E21A4D92791F8CC009075A0 /* DynamicTriangleTests.swift */,
 			);
 			path = KataClubTests;
 			sourceTree = "<group>";
@@ -261,7 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EC9489A2790B44C00B68C96 /* ContentView.swift in Sources */,
-				6D19F1CC2790BACA00D0CE14 /* PyramidOfOnesInstructions.swift in Sources */,
+				6D19F1CC2790BACA00D0CE14 /* DynamicTriangleView.swift in Sources */,
 				3EC948982790B44C00B68C96 /* KataClubApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EC948A92790B44D00B68C96 /* KataClubTests.swift in Sources */,
+				3E21A4DA2791F8CC009075A0 /* DynamicTriangleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
