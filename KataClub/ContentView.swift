@@ -11,8 +11,8 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                NavigationLink(destination: Text("Pyramid of 1s")) {
-                    Text("Pyramid of 1s")
+                NavigationLink(destination: DynamicTriangleView()) {
+                    Text("Dynamic Triangle")
                 }
             }
             .navigationTitle("Kata Club")
