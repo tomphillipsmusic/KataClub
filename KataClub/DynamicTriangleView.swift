@@ -47,25 +47,7 @@ struct DynamicTriangleView: View {
     
     // TODO: Complete the function so that it returns the correct triangle of ones based on the provided height
     func triangleOfOnes(with height: String) -> String {
-        guard let height = Int(height), height > 0 else { return invalidInputText}
-        
-        if height == 1 {
-            return "1"
-        }
-        
-        var output = ""
-        let numberOfRows = (height * 2) - 1
-        
-        for row in 1...numberOfRows {
-            let numberOfOnes = row <= height ? row : (numberOfRows - row) + 1
-            output.append(String(repeating: "1", count: numberOfOnes))
-            
-            if row < numberOfRows {
-                output.append("\n")
-            }
-        }
-        
-        return output
+        return ""
     }    
 }
 
