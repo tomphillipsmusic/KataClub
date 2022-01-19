@@ -5,14 +5,32 @@
 //  Created by Tom Phillips on 1/13/22.
 //
 
-import SwiftUI
 
+
+//HI! WELCOME TO KATA CLUB :)
+//RUN THIS APP IN THE SIMULATOR (Press the Play button - Not the preview area) TO SEE AVAILABLE CODING CHALLENGES!
+
+
+
+
+
+
+
+
+
+
+
+import SwiftUI
+//This navigation view holds all of the available coding problems, available via NavigationLinks.
 struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
                 NavigationLink(destination: DynamicTriangleView()) {
-                    Text("Dynamic Triangle")
+                    Text("Dynamic Triangle (Logic)")
+                }
+                NavigationLink(destination: FeaturedAppHelperView()) {
+                    Text("Featured App (Interface)")
                 }
             }
             .navigationTitle("Kata Club")
