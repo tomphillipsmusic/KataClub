@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//This Color extension facilitates the use of Custom Colors from the assets folder.
 extension Color {
     public static var highContrastGray: Color {
         return Color("HighContrastGray", bundle: nil)

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//This view describes the interface to be built in the FeaturedAppView. Do not edit this to solve the problem, instead edit FeaturedAppView.
 struct FeaturedAppHelperView: View {
     var body: some View {
         ScrollView {
@@ -17,6 +18,7 @@ struct FeaturedAppHelperView: View {
                     Text("App Store")
                         .font(.title)
                     Divider()
+                    //The triple-double quotes help us type a multi-line string.
                     Text("""
                         Recreate this interface in the FeaturedAppView.swift file.
                         
@@ -25,21 +27,17 @@ struct FeaturedAppHelperView: View {
                     Divider()
                 }
                 .padding()
+                //This NavigationLink will not work unless running in the simulator.
                 NavigationLink("FeaturedAppView") {
                     FeaturedAppView()
                 }
                 Divider()
+                //This is how the FeaturedAppView should look once completed.
                 Image("FeaturedAppHiFi")
                     .resizable()
                     .scaledToFit()
                     .accessibilityLabel(Text("Prototype of a Featured App in the App Store. The app is a game called 'Grand Mountain Adventure.' The tagline above says 'Featured Game,' and the description says 'Carve up some powder in this stunning ski park.'"))
             }
         }
-    }
-}
-
-struct FeaturedAppHelperView_Previews: PreviewProvider {
-    static var previews: some View {
-        FeaturedAppHelperView()
     }
 }

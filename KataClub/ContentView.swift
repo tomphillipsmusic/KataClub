@@ -5,8 +5,23 @@
 //  Created by Tom Phillips on 1/13/22.
 //
 
-import SwiftUI
 
+
+//HI! WELCOME TO KATA CLUB :)
+//RUN THIS APP IN THE SIMULATOR (Press the Play button - Not the preview area) TO SEE AVAILABLE CODING CHALLENGES!
+
+
+
+
+
+
+
+
+
+
+
+import SwiftUI
+//This navigation view holds all of the available coding problems, available via NavigationLinks.
 struct ContentView: View {
     var body: some View {
         NavigationView {
