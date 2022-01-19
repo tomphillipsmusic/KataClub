@@ -1,13 +1,15 @@
 # KataClub
 
-Welcome to the Kata Club
+Welcome to the Kata Club!
 
-This is an extracurricular coding challenge area
+This is an extracurricular coding challenge area. Our goal here is to provide some coding challenges to help you practice implementing the concepts we've covered. Several of these challenges are examples of what you might find in some coding interviews.
 
-We will try to post one challenge per week and review them on Fridays from 12-1
+To do some of the challenges you'll need to 
 
-Clone the repo, make a new branch, fill out the function section that is left blank
-
+1. clone this repo
+2. make a new branch 
+3. complete the function / follow the instructions
+4. run the unit tests (if applicable)
 
 # Unit Tests
 
