@@ -14,15 +14,14 @@ Clone the repo, make a new branch, fill out the function section that is left bl
 A unit test is a method to test a specific piece of code. The tests help us make sure our code is behaving as expected. Several of these challenges have solutions that can be validated with unit tests which we will provide when possible. Below is a rough outline of the general strategy.
 
 1. give a test case
-2. hardcode the expected value
-3. run your function
-4. compare your results from step 3 to the hardcoded results of 2
-5. if they match then the test is a success
+2. run your function
+3. compare your results from step 2 to the hardcoded version of what you expect to happen
+4. if they match then the test is a success
 
 
 ### Example 
 
-this is a demo for a function and some tests that would go with it.
+this is a demo for a function and some tests that would go with it. The function should take in a string and return a greeting with the entered name in all caps. 
 
 ```
 func greetingAllCapsName(name: String) -> String {
@@ -31,7 +30,9 @@ func greetingAllCapsName(name: String) -> String {
 }
 ```
 
-these are some examples of unit tests that might be written for the function greetingAllCapsName
+Below are some examples of unit tests that might be written for the function greetingAllCapsName.
+
+The first test takes in "tyler" (all lowercase) as the given test case. We then run the function with the test case. Then we compare the test case to the hardcoded value ("hello, TYLER").
 ```
 func testAllLowercaseName() throws {
      // Given
@@ -44,6 +45,8 @@ func testAllLowercaseName() throws {
      XCTAssert(actualResult == "hello, TYLER", "entering all lowercase name returns an all uppercase name")
 }
 ```
+
+The second test takes in "TYLER" (already all caps). We want to confirm that when we give someting in all caps it doesn't behave strangely.
 
 ```
 func testAllUppercaseName() throws {
