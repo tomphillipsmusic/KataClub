@@ -88,14 +88,6 @@ Navigate to the file with tests for the specific challenge. In the image below t
   <summary> Dynamic Triangle </summary>
  
   ```
-  func triangleOfOnes(with height: String) -> String {
-        return ""
-    } 
-  ```
-  
-  ```
-  func triangleOfOnes(with height: String) -> String {
-        return ""
-    } 
+  LOL nice try
   ```
 </details>
