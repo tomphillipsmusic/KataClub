@@ -60,6 +60,8 @@ func testAllUppercaseName() throws {
 
 ### In XCode
 
+#### To run all tests
+
 in Xcode use ```cmd + u``` to run the existing tests.
 
 The image below shows us what it looks like after tests have been run. In this example, 3 tests failed. Our code may still run without errors, but the results of the code don't match the expected results.
@@ -67,6 +69,13 @@ The image below shows us what it looks like after tests have been run. In this e
 ![image](https://user-images.githubusercontent.com/47198432/150194114-92f24290-f23d-47e4-a786-5695ba5096fe.png)
 
 If you run your code and get all green check marks then your function passed our unit tests and qualifies as a valid solution.
+
+
+#### To run an individual test
+
+Navigate to the file with tests for the specific challenge. In the image below the file circled in orange (DynamicTriangleTests) has the unit tests for the Dynamic Triangle challenge. Press the play button (circled in red) next to the test function you want to run. If the test passes the play button will change to a green check; if it fails it will turn into a red x.
+
+![image](https://user-images.githubusercontent.com/47198432/150199364-c4a8e75b-6e29-4954-8f77-a86304754cc9.png)
 
 # Solutions
 
