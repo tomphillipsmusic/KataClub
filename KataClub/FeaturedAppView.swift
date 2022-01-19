@@ -18,7 +18,11 @@ struct FeaturedAppView: View {
     }
 }
 
-//TODO: Mentors should delete this area before putting it out, and change the previews back to FeaturedAppView()
+
+
+
+
+//TODO: Mentors should delete this area before putting it out.
 struct FeaturedAppViewAnswer: View {
     var body: some View {
         VStack {
@@ -51,11 +55,14 @@ struct FeaturedAppViewAnswer: View {
     }
 }
 
+
+
+
 struct FeaturedAppView_Previews: PreviewProvider {
     static var previews: some View {
-        FeaturedAppViewAnswer()
+        FeaturedAppView()
             .previewDevice("iPhone 12")
-        FeaturedAppViewAnswer()
+        FeaturedAppView()
             .environment(\.sizeCategory, .accessibilityLarge)
             .previewDevice("iPhone 12 mini")
             .preferredColorScheme(.dark)
