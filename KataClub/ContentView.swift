@@ -12,7 +12,10 @@ struct ContentView: View {
         NavigationView {
             List {
                 NavigationLink(destination: DynamicTriangleView()) {
-                    Text("Dynamic Triangle")
+                    Text("Dynamic Triangle (Logic)")
+                }
+                NavigationLink(destination: FeaturedAppHelperView()) {
+                    Text("Featured App (Interface)")
                 }
             }
             .navigationTitle("Kata Club")

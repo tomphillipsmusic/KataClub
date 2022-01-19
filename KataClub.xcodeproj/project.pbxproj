@@ -13,6 +13,9 @@
 		3EC9489C2790B44D00B68C96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EC9489B2790B44D00B68C96 /* Assets.xcassets */; };
 		3EC9489F2790B44D00B68C96 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EC9489E2790B44D00B68C96 /* Preview Assets.xcassets */; };
 		3EC948A92790B44D00B68C96 /* KataClubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC948A82790B44D00B68C96 /* KataClubTests.swift */; };
+		5DE759B02798702400002998 /* FeaturedAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE759AF2798702400002998 /* FeaturedAppView.swift */; };
+		5DE759B22798703000002998 /* FeaturedAppHelperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE759B12798703000002998 /* FeaturedAppHelperView.swift */; };
+		5DE759B427987A4E00002998 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE759B327987A4E00002998 /* Color+Extension.swift */; };
 		6D19F1CC2790BACA00D0CE14 /* DynamicTriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19F1CB2790BACA00D0CE14 /* DynamicTriangleView.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +38,9 @@
 		3EC9489E2790B44D00B68C96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3EC948A42790B44D00B68C96 /* KataClubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KataClubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EC948A82790B44D00B68C96 /* KataClubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KataClubTests.swift; sourceTree = "<group>"; };
+		5DE759AF2798702400002998 /* FeaturedAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedAppView.swift; sourceTree = "<group>"; };
+		5DE759B12798703000002998 /* FeaturedAppHelperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedAppHelperView.swift; sourceTree = "<group>"; };
+		5DE759B327987A4E00002998 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		6D19F1CB2790BACA00D0CE14 /* DynamicTriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTriangleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +88,9 @@
 				3EC9489B2790B44D00B68C96 /* Assets.xcassets */,
 				3EC9489D2790B44D00B68C96 /* Preview Content */,
 				6D19F1CB2790BACA00D0CE14 /* DynamicTriangleView.swift */,
+				5DE759B327987A4E00002998 /* Color+Extension.swift */,
+				5DE759AF2798702400002998 /* FeaturedAppView.swift */,
+				5DE759B12798703000002998 /* FeaturedAppHelperView.swift */,
 			);
 			path = KataClub;
 			sourceTree = "<group>";
@@ -203,8 +212,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DE759B02798702400002998 /* FeaturedAppView.swift in Sources */,
+				5DE759B427987A4E00002998 /* Color+Extension.swift in Sources */,
 				3EC9489A2790B44C00B68C96 /* ContentView.swift in Sources */,
 				6D19F1CC2790BACA00D0CE14 /* DynamicTriangleView.swift in Sources */,
+				5DE759B22798703000002998 /* FeaturedAppHelperView.swift in Sources */,
 				3EC948982790B44C00B68C96 /* KataClubApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
