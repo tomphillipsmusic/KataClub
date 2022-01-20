@@ -2,17 +2,18 @@
 
 Welcome to the Kata Club!
 
-This is an extracurricular coding challenge area. Our goal here is to provide some coding challenges to help you practice implementing the concepts we've covered. Several of these challenges are examples of what you might find in some coding interviews.
+This is an extracurricular coding challenge area. Our goal here is to provide some coding challenges to help you practice implementing the concepts we've covered. The challenges are classified as Logic or Interface. Logic challenges are focused on things like loops, functions, and arrays - the stuff that runs behind the scenes. Interface challenges are concepts like images, colors, and other UI elements - things you see on the screen. Several of these challenges are examples of what you might find in some coding interviews. Feel free to work on these individually or with a friend. 
 
-To do some of the challenges you'll need to 
+Our current plan is to release one logic and one interface challenge each week. We will host optional review sessions for these challenges on Fridays from 12:00 to 1:00. These will be casual reviews where we talk about various ways a challenge can be solved and review some solutions.
 
+### To do some of the challenges you'll need to :
+0. have a github account and connect it with xcode (this is done if you attended the Version Control workshop. you may need to update your PAT. there are slides on Ryver in the Kata Club channel about setting up github)
 1. clone this repo
-2. make a new branch 
-3. complete the function / follow the instructions
-4. run the unit tests (if applicable)
+2. complete the function / follow the instructions
+3. run the unit tests (if applicable)
+4. attend the review session on Fridays (optional)
 
-# Unit Tests
-
+## Unit Tests
 A unit test is a method to test a specific piece of code. The tests help us make sure our code is behaving as expected. Several of these challenges have solutions that can be validated with unit tests which we will provide when possible. Below is a rough outline of the general strategy.
 
 1. give a test case
@@ -22,7 +23,6 @@ A unit test is a method to test a specific piece of code. The tests help us make
 
 
 ### Example 
-
 this is a demo for a function and some tests that would go with it. The function should take in a string and return a greeting with the entered name in all caps. 
 
 ```
@@ -64,7 +64,6 @@ func testAllUppercaseName() throws {
 ```
 
 ### In XCode
-
 #### To run all tests
 
 in Xcode use ```cmd + u``` to run the existing tests.
@@ -77,15 +76,21 @@ If you run your code and get all green check marks then your function passed our
 
 
 #### To run an individual test
-
 Navigate to the file with tests for the specific challenge. In the image below the file circled in orange (DynamicTriangleTests) has the unit tests for the Dynamic Triangle challenge. Press the play button (circled in red) next to the test function you want to run. If the test passes the play button will change to a green check; if it fails it will turn into a red x.
 
 ![image](https://user-images.githubusercontent.com/47198432/150199364-c4a8e75b-6e29-4954-8f77-a86304754cc9.png)
 
 # Solutions
-
 <details> 
   <summary> Dynamic Triangle </summary>
+ 
+  ```
+  LOL nice try
+  ```
+</details>
+
+<details> 
+  <summary> Featured App View </summary>
  
   ```
   LOL nice try
