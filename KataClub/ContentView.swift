@@ -32,6 +32,9 @@ struct ContentView: View {
                 NavigationLink(destination: FeaturedAppHelperView()) {
                     Text("Featured App (Interface)")
                 }
+                NavigationLink(destination: PodcastEpisodeHelperView()) {
+                    Text("Podcast Episode (Interface)")
+                }
             }
             .navigationTitle("Kata Club")
         }
