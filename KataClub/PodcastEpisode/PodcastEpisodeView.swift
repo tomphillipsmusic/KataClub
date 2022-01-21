@@ -22,5 +22,13 @@ struct PodcastEpisodeView: View {
 struct PodcastEpisodeView_Previews: PreviewProvider {
     static var previews: some View {
         PodcastEpisodeView()
+            .previewDevice("iPhone 12")
+            .preferredColorScheme(.dark)
+        PodcastEpisodeView()
+            .environment(\.sizeCategory, .extraSmall)
+            .previewDevice("iPhone 12 Pro Max")
+        PodcastEpisodeView()
+            .environment(\.sizeCategory, .accessibilityLarge)
+            .previewDevice("iPhone 12 mini")
     }
 }
