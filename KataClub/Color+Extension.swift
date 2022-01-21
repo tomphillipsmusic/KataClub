@@ -18,4 +18,7 @@ extension Color {
     public static var highContrastPurple: Color {
         return Color("HighContrastPurple", bundle: nil)
     }
+    public static var lightGray: Color {
+        return Color("LightGray", bundle: nil)
+    }
 }
