@@ -10,7 +10,7 @@ import SwiftUI
 //TODO: Recreate the interface shown in PodcastEpisodeHelperView in this View below.
 /* Hints:
  -Avoid using .frame, .offset, and .position to ensure it looks good on many screen sizes.
- -Use the custom color Color.highContrastPurple.
+ -Use the custom colors Color.highContrastPurple and Color.lightGray.
  */
 struct PodcastEpisodeView: View {
     var body: some View {
