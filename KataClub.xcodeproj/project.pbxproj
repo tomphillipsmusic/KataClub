@@ -21,6 +21,7 @@
 		5DE759B22798703000002998 /* FeaturedAppHelperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE759B12798703000002998 /* FeaturedAppHelperView.swift */; };
 		5DE759B427987A4E00002998 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE759B327987A4E00002998 /* Color+Extension.swift */; };
 		6D19F1CC2790BACA00D0CE14 /* DynamicTriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19F1CB2790BACA00D0CE14 /* DynamicTriangleView.swift */; };
+		6DDE124E27A33C2800B464F4 /* ArithmeticProgressionViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDE124D27A33C2800B464F4 /* ArithmeticProgressionViewTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		5DE759B12798703000002998 /* FeaturedAppHelperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedAppHelperView.swift; sourceTree = "<group>"; };
 		5DE759B327987A4E00002998 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		6D19F1CB2790BACA00D0CE14 /* DynamicTriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTriangleView.swift; sourceTree = "<group>"; };
+		6DDE124D27A33C2800B464F4 /* ArithmeticProgressionViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticProgressionViewTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			children = (
 				3EC948A82790B44D00B68C96 /* KataClubTests.swift */,
 				3E21A4D92791F8CC009075A0 /* DynamicTriangleTests.swift */,
+				6DDE124D27A33C2800B464F4 /* ArithmeticProgressionViewTest.swift */,
 			);
 			path = KataClubTests;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DDE124E27A33C2800B464F4 /* ArithmeticProgressionViewTest.swift in Sources */,
 				3EC948A92790B44D00B68C96 /* KataClubTests.swift in Sources */,
 				3E21A4DA2791F8CC009075A0 /* DynamicTriangleTests.swift in Sources */,
 			);
