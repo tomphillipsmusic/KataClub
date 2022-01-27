@@ -21,7 +21,7 @@ struct ArithmeticProgressionView: View {
                     .padding()
                 
                 Text("""
-                An Arithmetic Progression is defined as one in which there is a constant difference between the consecutive terms of a given series of numbers. You are provided with consecutive elements of an Arithmetic Progression. There is however one hitch: exactly one term from the original series is missing from the set of numbers which have been given to you. The rest of the given series is the same as the original AP. Find the missing term.
+                An Arithmetic Progression is defined as one in which there is a constant difference between the consecutive terms of a given series of numbers. You are provided with consecutive elements of an Arithmetic Progression. There is however one hitch: exactly one term from the original series is missing from the set of numbers which have been given to you. The rest of the given series is the same as the original AP. Find the missing term. If the sequence has no missing term, return 'nil' instead.
                 
                 You have to write a function that receives a list, list size will always be at least 3 numbers. The missing term will never be the first or last one.
                 
@@ -41,7 +41,11 @@ struct ArithmeticProgressionView: View {
                 
                 Text("Missing Element: \(output)")
                 Button("Run") {
-                    output = String(findMissingElement(in: inputArray))
+                    if let missingElement = findMissingElement(in: inputArray) {
+                        output = String(missingElement)
+                    } else {
+                        output = "Error"
+                    }
                 }
                 .padding()
                 .disabled(inputArrayText.isEmpty)
@@ -50,9 +54,8 @@ struct ArithmeticProgressionView: View {
     }
     
     // TODO: Fill in the function so that it finds the missing element of the Arithmetic Progression
-    func findMissingElement(in array: [Int]) -> Int {
-
-         return 0
+    func findMissingElement(in array: [Int]) -> Int? {
+        return nil
     }
     
     func generateRandomInputArray() -> [Int] {

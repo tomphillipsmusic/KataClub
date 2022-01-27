@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import KataClub
 
 class ArithmeticProgressionViewTest: XCTestCase {
     
@@ -26,7 +27,7 @@ class ArithmeticProgressionViewTest: XCTestCase {
         let inputArray: [Int] = [1, 3, 7]
         
         // When
-        let actualResult: Int = systemUnderTest.findMissingElement(in: inputArray)
+        let actualResult: Int? = systemUnderTest.findMissingElement(in: inputArray)
         
         // Then
         let expectedResult: Int = 5
@@ -39,10 +40,10 @@ class ArithmeticProgressionViewTest: XCTestCase {
         let inputArray: [Int] = [-7, -3, -1]
         
         // When
-        let actualResult: Int = systemUnderTest.findMissingElement(in: inputArray)
+        let actualResult = systemUnderTest.findMissingElement(in: inputArray)
         
         // Then
-        let expectedResult: Int = -5
+        let expectedResult: Int? = -5
         
         XCTAssert(expectedResult == actualResult, "[-7, -3, -1] returns -5")
     }
@@ -52,7 +53,7 @@ class ArithmeticProgressionViewTest: XCTestCase {
         let inputArray: [Int] = [-50, -45, -40, -30]
         
         // When
-        let actualResult: Int = systemUnderTest.findMissingElement(in: inputArray)
+        let actualResult: Int? = systemUnderTest.findMissingElement(in: inputArray)
         
         // Then
         let expectedResult: Int = -35
@@ -66,7 +67,7 @@ class ArithmeticProgressionViewTest: XCTestCase {
         let inputArray: [Int] = [-4, -2, 2, 4]
         
         // When
-        let actualResult: Int = systemUnderTest.findMissingElement(in: inputArray)
+        let actualResult: Int? = systemUnderTest.findMissingElement(in: inputArray)
         
         // Then
         let expectedResult: Int = 0
@@ -79,11 +80,12 @@ class ArithmeticProgressionViewTest: XCTestCase {
         let inputArray: [Int] = [2,4,6,8,10]
         
         // When
-        let actualResult: Int = systemUnderTest.findMissingElement(in: inputArray)
+        let actualResult: Int? = systemUnderTest.findMissingElement(in: inputArray)
         
         // Then
-        let expectedResult = nil
-        
+        let expectedResult: Int? = nil
+        print("actualResult")
+        print("expectedResult")
         XCTAssert(expectedResult == actualResult, "an array with no missing values returns nil")
     }
     
