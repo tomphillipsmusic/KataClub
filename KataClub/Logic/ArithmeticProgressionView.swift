@@ -11,6 +11,8 @@ struct ArithmeticProgressionView: View {
     @State private var inputArrayText = ""
     @State private var output = ""
     
+    @State var inputArray = [Int]()
+    
     var body: some View {
         ScrollView {
             VStack{
@@ -31,36 +33,46 @@ struct ArithmeticProgressionView: View {
                 Divider()
                 Text("Input Array: \(inputArrayText)")
                 Button("Generate Random Array") {
-                    inputArrayText = generateRandomInputArray()
+                    inputArray = generateRandomInputArray()
+                    
+                    inputArrayText = "[" + inputArray.map { String($0) }.joined(separator: ", ") + "]"
                 }
                 .padding()
                 
                 Text("Missing Element: \(output)")
                 Button("Run") {
-                    
+                    output = String(findMissingElement(in: inputArray))
                 }
+                .padding()
                 .disabled(inputArrayText.isEmpty)
             }
         }
     }
     
-    func generateRandomInputArray() -> String {
+    // TODO: Fill in the function so that it finds the missing element of the Arithmetic Progression
+    func findMissingElement(in array: [Int]) -> Int {
+
+         return 0
+    }
+    
+    func generateRandomInputArray() -> [Int] {
         let minimumCount = 4
         let maxCount = 9
         let count = Int.random(in: minimumCount...maxCount)
         let arithmeticProgression = Int.random(in: 1...maxCount)
         let startingNumber = Int.random(in: -100...100)
-        var inputArray = ["\(startingNumber)"]
+        var inputArray = [startingNumber]
         var currentNumber = startingNumber
         
         for _ in 1...count {
             currentNumber += arithmeticProgression
-            inputArray.append("\(currentNumber)")
+            inputArray.append(currentNumber)
         }
         
         let indexToRemove = Int.random(in: 1..<count - 1)
         inputArray.remove(at: indexToRemove)
-        return "[" + inputArray.joined(separator: ", ") + "]"
+        return inputArray
+        //return "[" + inputArray.joined(separator: ", ") + "]"
     }
 }
 

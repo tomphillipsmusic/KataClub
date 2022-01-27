@@ -70,10 +70,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E186EFE27A336B600D18239 /* FeaturedApp */ = {
+			isa = PBXGroup;
+			children = (
+				5DE759AF2798702400002998 /* FeaturedAppView.swift */,
+				5DE759B12798703000002998 /* FeaturedAppHelperView.swift */,
+			);
+			path = FeaturedApp;
+			sourceTree = "<group>";
+		};
+		3E186EFF27A336DD00D18239 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				6D19F1CB2790BACA00D0CE14 /* DynamicTriangleView.swift */,
+				3EEA56D027A32B290009A650 /* ArithmeticProgressionView.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		3E186F0027A336E700D18239 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				3E186EFE27A336B600D18239 /* FeaturedApp */,
+				5D9DEE78279B0B8000D0B82D /* PodcastEpisode */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
 		3EC9488B2790B44C00B68C96 = {
 			isa = PBXGroup;
 			children = (
 				3EC948962790B44C00B68C96 /* KataClub */,
+				5DE759B327987A4E00002998 /* Color+Extension.swift */,
 				3EC948A72790B44D00B68C96 /* KataClubTests */,
 				3EC948952790B44C00B68C96 /* Products */,
 			);
@@ -94,14 +122,10 @@
 				3EC948972790B44C00B68C96 /* KataClubApp.swift */,
 				3EEA56CE27A3288A0009A650 /* Kata.swift */,
 				3EC948992790B44C00B68C96 /* ContentView.swift */,
-				3EEA56D027A32B290009A650 /* ArithmeticProgressionView.swift */,
 				3EC9489B2790B44D00B68C96 /* Assets.xcassets */,
 				3EC9489D2790B44D00B68C96 /* Preview Content */,
-				6D19F1CB2790BACA00D0CE14 /* DynamicTriangleView.swift */,
-				5DE759B327987A4E00002998 /* Color+Extension.swift */,
-				5DE759AF2798702400002998 /* FeaturedAppView.swift */,
-				5DE759B12798703000002998 /* FeaturedAppHelperView.swift */,
-				5D9DEE78279B0B8000D0B82D /* PodcastEpisode */,
+				3E186EFF27A336DD00D18239 /* Logic */,
+				3E186F0027A336E700D18239 /* Interface */,
 			);
 			path = KataClub;
 			sourceTree = "<group>";
