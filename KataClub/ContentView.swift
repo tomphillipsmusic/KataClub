@@ -23,6 +23,7 @@
 import SwiftUI
 //This navigation view holds all of the available coding problems, available via NavigationLinks.
 struct ContentView: View {
+    
     var body: some View {
         NavigationView {
             List {
