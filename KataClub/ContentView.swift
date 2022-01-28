@@ -23,6 +23,7 @@
 import SwiftUI
 //This navigation view holds all of the available coding problems, available via NavigationLinks.
 struct ContentView: View {
+    
     var body: some View {
         NavigationView {
             List {
@@ -31,6 +32,9 @@ struct ContentView: View {
                 }
                 NavigationLink(destination: FeaturedAppHelperView()) {
                     Text("Featured App (Interface)")
+                }
+                NavigationLink(destination: ArithmeticProgressionView()) {
+                    Text("Arithmetic Progression (Logic)")
                 }
                 NavigationLink(destination: PodcastEpisodeHelperView()) {
                     Text("Podcast Episode (Interface)")
