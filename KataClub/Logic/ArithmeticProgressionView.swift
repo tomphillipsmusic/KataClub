@@ -79,7 +79,6 @@ struct ArithmeticProgressionView: View {
         let indexToRemove = Int.random(in: 1..<count - 1)
         inputArray.remove(at: indexToRemove)
         return inputArray
-        //return "[" + inputArray.joined(separator: ", ") + "]"
     }
 }
 
