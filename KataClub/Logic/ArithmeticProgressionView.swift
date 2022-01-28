@@ -27,7 +27,7 @@ struct ArithmeticProgressionView: View {
                 
                 You have to write a function that receives an array of Integers. The array size will always be at least 3 numbers. The missing term will never be the first or last one.
                 
-                When you press 'Generate Random Array' a randomly generated valid array will be created. When you have finished the function and press 'Run', the missing element should be displayed in the UI.
+                When you press 'Generate Random Array' a randomly generated valid array will be created. When you have finished the function and press 'Run', the missing element of the generated input array should be displayed in the UI.
                 
                 Example: If the input array is [1, 3, 5, 9, 11], then the missing element is 7
                 
