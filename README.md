@@ -84,8 +84,63 @@ Navigate to the file with tests for the specific challenge. In the image below t
 <details> 
   <summary> Dynamic Triangle </summary>
  
+  ### single loop
   ```
-  LOL nice try
+   func triangleOfOnes(with height: String) -> String {
+        guard let height = Int(height), height > 0 else { return invalidInputText}
+        
+        if height == 1 {
+            return "1"
+        }
+        
+        var output = ""
+        let numberOfRows = (height * 2) - 1
+        
+        for row in 1...numberOfRows {
+            let numberOfOnes = row <= height ? row : (numberOfRows - row) + 1
+            output.append(String(repeating: "1", count: numberOfOnes))
+            
+            if row < numberOfRows {
+                output.append("\n")
+            }
+        }
+        
+        return output
+    }
+  ```
+  
+  ### two loops
+  ```
+  func triangleOfOnes(with height: String) -> String {
+            
+    guard let height: Int = Int(height) else {
+        return invalidInputText
+    }
+    
+    if height < 1 {
+        return invalidInputText
+    }
+    
+    if height == 1 {
+        return "1"
+    }
+    
+    var result = """
+    """
+    
+    for i in 1...height{
+        result += "\(String(repeating: "1", count: i))\n"
+    }
+    
+    for i in (1..<height).reversed(){
+        result += String(repeating: "1", count: i)
+        if i != 1{
+            result += "\n"
+        }
+    }
+    
+    return result
+}
   ```
 </details>
 
