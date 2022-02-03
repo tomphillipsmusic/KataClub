@@ -8,8 +8,28 @@
 import SwiftUI
 
 struct SubstringView: View {
+    
+    let instructions: String = """
+    You are given two strings, S and x. Count the number of times that the string x occurs within the string S.
+
+    Example:
+        S = "I love to say riqriqriq"
+        x = "riq"
+        occurrences = 3
+    
+    """
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Text("Substrings")
+                .font(.largeTitle)
+            Text(instructions)
+                .padding([.leading, .trailing])
+        }
+    }
+    
+    func calculateOccurrences(inputString:String, inputSubstring:String) -> Int {
+        return 0
     }
 }
 

@@ -21,15 +21,44 @@ class SubstringViewTest: XCTestCase {
 
     func threeOccurrences() throws {
         //Given
-        let inputString: String = "riqriqriq"
-        let inputSubstring: String = "riq"
+        let inputString: String = "abcabcabc"
+        let inputSubstring: String = "abc"
         
         // When
-        //let actualResult: Int: = systemUnderTest.calculateOccurrences
+        let actualResult: Int = systemUnderTest.calculateOccurrences(inputString:inputString, inputSubstring:inputSubstring)
         
         // Then
         let expectedResult: Int = 3
         
+        XCTAssert(expectedResult == actualResult, "substring occurs 3 times")
+    }
+    
+    func noOccurrences() throws {
+        // Given
+        let inputString: String = "riq's treats make me freak"
+        let inputSubstring: String = "banana"
+        
+        // When
+        let actualResult: Int = systemUnderTest.calculateOccurrences(inputString:inputString, inputSubstring:inputSubstring)
+        
+        //Then
+        let expectedResult: Int = 0
+        
+        XCTAssert(expectedResult == actualResult, "substring is not in the string")
+    }
+    
+    func oneLetterSubstring() throws {
+        // Given
+        let inputString: String = "a banana"
+        let inputSubstring: String = "a"
+        
+        // When
+        let actualResult: Int = systemUnderTest.calculateOccurrences(inputString:inputString, inputSubstring:inputSubstring)
+        
+        // Then
+        let expectedResult: Int = 4
+        
+        XCTAssert(expectedResult == actualResult, "single letter occurs 4 times in a substring")
     }
 
     func testPerformanceExample() throws {
