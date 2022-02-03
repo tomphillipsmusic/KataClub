@@ -151,3 +151,11 @@ Navigate to the file with tests for the specific challenge. In the image below t
   LOL nice try
   ```
 </details>
+
+<details> 
+  <summary> Arithmetic Progression </summary>
+ 
+  ```
+  LOL nice try
+  ```
+</details>
