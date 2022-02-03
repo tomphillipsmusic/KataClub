@@ -28,6 +28,7 @@ struct SubstringView: View {
         }
     }
     
+    // TODO: Fill in the function to count how many times inputSubstring occurs within inputString
     func calculateOccurrences(inputString:String, inputSubstring:String) -> Int {
         return 0
     }

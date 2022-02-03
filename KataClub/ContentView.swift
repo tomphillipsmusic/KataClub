@@ -39,6 +39,9 @@ struct ContentView: View {
                 NavigationLink(destination: PodcastEpisodeHelperView()) {
                     Text("Podcast Episode (Interface)")
                 }
+                NavigationLink(destination: SubstringView()) {
+                    Text("Substring (Logic)")
+                }
             }
             .navigationTitle("Kata Club")
         }
