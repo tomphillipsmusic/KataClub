@@ -148,6 +148,42 @@ Navigate to the file with tests for the specific challenge. In the image below t
   <summary> Featured App View </summary>
  
   ```
-  LOL nice try
+//This VStack holds the whole interface.
+VStack {
+    Image("GrandMountain")
+        .resizable()
+        .scaledToFit()
+    
+    //This HStack allows us to push the elements further to the left with a Spacer.
+    HStack {
+        
+        //This VStack holds all of our text elements.
+        VStack(alignment: .leading) {
+            Text("FEATURED GAME")
+                .font(.headline)
+                .foregroundColor(.highContrastGray)
+            Text("Grand Mountain Adventure")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+            //This line prevents the text getting cut off with a "..."
+                .fixedSize(horizontal: false, vertical: true)
+            Text("Carve up some powder in this stunning ski park.")
+                .foregroundColor(.highContrastGray)
+        }
+        
+        Spacer()
+    }
+    .padding()
+}
+//This clips the corners to be rounded.
+.cornerRadius(15.0)
+//The .background modifier lets us add colors and shadows that don't affect the rest of our view.
+//I prefer .background over ZStacks/.frame, because it allows us to fit the content freely to itself and the screen.
+.background {
+    RoundedRectangle(cornerRadius: 15.0)
+        .foregroundColor(.background)
+        .shadow( radius: 15.0, x: 0.0, y: 8.0)
+}
+.padding()
   ```
 </details>
