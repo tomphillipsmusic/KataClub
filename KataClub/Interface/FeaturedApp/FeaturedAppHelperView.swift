@@ -20,7 +20,9 @@ struct FeaturedAppHelperView: View {
                     Divider()
                     //The triple-double quotes help us type a multi-line string.
                     Text("""
-                        Recreate this interface in the FeaturedAppView.swift file.
+                        The image below is a Hi-Fi that the design team gave you. (You can also find the Hi-Fi in the assets folder under FeaturedAppHiFi.)
+                        
+                        Try to recreate this interface in the FeaturedAppView.swift file.
                         
                         The NavigationLink below will take you to the FeaturedAppView page, for preview purposes.
                         """)
