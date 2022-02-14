@@ -80,7 +80,61 @@ Navigate to the file with tests for the specific challenge. In the image below t
 
 ![image](https://user-images.githubusercontent.com/47198432/150199364-c4a8e75b-6e29-4954-8f77-a86304754cc9.png)
 
-# Solutions
+# Interface Solutions
+
+<details> 
+  <summary> Featured App View </summary>
+ 
+  ```
+//This VStack holds the whole interface.
+VStack {
+    Image("GrandMountain")
+        .resizable()
+        .scaledToFit()
+    
+    //This HStack allows us to push the elements further to the left with a Spacer.
+    HStack {
+        
+        //This VStack holds all of our text elements.
+        VStack(alignment: .leading) {
+            Text("FEATURED GAME")
+                .font(.headline)
+                .foregroundColor(.highContrastGray)
+            Text("Grand Mountain Adventure")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+            //This line prevents the text getting cut off with a "..."
+                .fixedSize(horizontal: false, vertical: true)
+            Text("Carve up some powder in this stunning ski park.")
+                .foregroundColor(.highContrastGray)
+        }
+        
+        Spacer()
+    }
+    .padding()
+}
+//This clips the corners to be rounded.
+.cornerRadius(15.0)
+//The .background modifier lets us add colors and shadows that don't affect the rest of our view.
+//I prefer .background over ZStacks/.frame, because it allows us to fit the content freely to itself and the screen.
+.background {
+    RoundedRectangle(cornerRadius: 15.0)
+        .foregroundColor(.background)
+        .shadow( radius: 15.0, x: 0.0, y: 8.0)
+}
+.padding()
+  ```
+</details>
+
+<details> 
+  <summary> Podcast Episode View </summary>
+ 
+  ```
+ LOL nice try!
+  ```
+</details>
+
+# Logic Solutions
 <details> 
   <summary> Dynamic Triangle </summary>
  
@@ -145,53 +199,76 @@ Navigate to the file with tests for the specific challenge. In the image below t
 </details>
 
 <details> 
-  <summary> Featured App View </summary>
+  <summary> Arithmetic Progression </summary>
+     
+  ### Ty
  
   ```
-//This VStack holds the whole interface.
-VStack {
-    Image("GrandMountain")
-        .resizable()
-        .scaledToFit()
-    
-    //This HStack allows us to push the elements further to the left with a Spacer.
-    HStack {
+     func findMissingElement(in array: [Int]) -> Int? {
         
-        //This VStack holds all of our text elements.
-        VStack(alignment: .leading) {
-            Text("FEATURED GAME")
-                .font(.headline)
-                .foregroundColor(.highContrastGray)
-            Text("Grand Mountain Adventure")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-            //This line prevents the text getting cut off with a "..."
-                .fixedSize(horizontal: false, vertical: true)
-            Text("Carve up some powder in this stunning ski park.")
-                .foregroundColor(.highContrastGray)
+        var deltas = [Int]()
+        
+        for i in 0...array.count-2{
+            deltas.append(array[i+1] - array[i])
         }
         
-        Spacer()
+        let minDelta = deltas.min()!
+        let maxDelta = deltas.max()!
+        
+        if minDelta == maxDelta{
+            // no missing numbers
+            return nil
+        } else {
+            let maxDeltaIndex = deltas.firstIndex(of: maxDelta)
+            let missingNumber = array[maxDeltaIndex!] + minDelta
+            return missingNumber
+        }
     }
-    .padding()
-}
-//This clips the corners to be rounded.
-.cornerRadius(15.0)
-//The .background modifier lets us add colors and shadows that don't affect the rest of our view.
-//I prefer .background over ZStacks/.frame, because it allows us to fit the content freely to itself and the screen.
-.background {
-    RoundedRectangle(cornerRadius: 15.0)
-        .foregroundColor(.background)
-        .shadow( radius: 15.0, x: 0.0, y: 8.0)
-}
-.padding()
+  ```
+ ### Tom
+     
+  ```
+  func findMissingElement(in array: [Int]) -> Int? {
+        let firstTerm = inputArray[0]
+        let lastTerm = inputArray[inputArray.count - 1]
+        let range = lastTerm - firstTerm
+        let arithmeticProgression = range / inputArray.count
+        
+        for index in 0...inputArray.count - 2  {
+          let currentTerm = inputArray[index]
+          let nextTerm = inputArray[index + 1]
+          
+          if currentTerm + arithmeticProgression != nextTerm {
+              return currentTerm + arithmeticProgression
+          }
+        }
+        
+        return nil
+    }
+  ```
+ ### Zoe
+     
+  ```
+     func findMissingElement(in array: [Int]) -> Int? {
+        var ranges: [Int] = []
+        
+        for index in 0..<(array.endIndex - 1) {
+            let range = array[index + 1] - array[index]
+            ranges.append(range)
+        }
+        
+        let step: Int = ranges.min() ?? 0
+        var missingValue: Int? = nil
+        
+        for index in 0..<ranges.count {
+            if ranges[index] != step {
+                missingValue = array[index] + step
+            }
+        }
+        
+        return missingValue
+    }
   ```
 </details>
 
-<details> 
-  <summary> Arithmetic Progression </summary>
- 
-  ```
-  LOL nice try
-  ```
-</details>
+
