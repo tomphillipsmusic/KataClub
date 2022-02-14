@@ -187,3 +187,11 @@ VStack {
 .padding()
   ```
 </details>
+
+<details> 
+  <summary> Arithmetic Progression </summary>
+ 
+  ```
+  LOL nice try
+  ```
+</details>
