@@ -22,6 +22,6 @@ extension Color {
         return Color("LightGray", bundle: nil)
     }
     public static var highContrastRed: Color {
-        return Color("highContrastRed", bundle: nil)
+        return Color("HighContrastRed", bundle: nil)
     }
 }
