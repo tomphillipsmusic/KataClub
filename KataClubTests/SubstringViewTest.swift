@@ -19,7 +19,7 @@ class SubstringViewTest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func threeOccurrences() throws {
+    func testThreeOccurrences() throws {
         //Given
         let inputString: String = "abcabcabc"
         let inputSubstring: String = "abc"
@@ -33,7 +33,7 @@ class SubstringViewTest: XCTestCase {
         XCTAssert(expectedResult == actualResult, "substring occurs 3 times")
     }
     
-    func noOccurrences() throws {
+    func testNoOccurrences() throws {
         // Given
         let inputString: String = "riq's treats make me freak"
         let inputSubstring: String = "banana"
@@ -47,7 +47,7 @@ class SubstringViewTest: XCTestCase {
         XCTAssert(expectedResult == actualResult, "substring is not in the string")
     }
     
-    func oneLetterSubstring() throws {
+    func testOneLetterSubstring() throws {
         // Given
         let inputString: String = "a banana"
         let inputSubstring: String = "a"
