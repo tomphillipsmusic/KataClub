@@ -24,6 +24,8 @@
 		5DE759B427987A4E00002998 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE759B327987A4E00002998 /* Color+Extension.swift */; };
 		6D19F1CC2790BACA00D0CE14 /* DynamicTriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19F1CB2790BACA00D0CE14 /* DynamicTriangleView.swift */; };
 		6DDE124E27A33C2800B464F4 /* ArithmeticProgressionViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDE124D27A33C2800B464F4 /* ArithmeticProgressionViewTest.swift */; };
+		6DE5F7B527AC5C3D00F4CDA2 /* SubstringViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE5F7B427AC5C3D00F4CDA2 /* SubstringViewTest.swift */; };
+		6DE5F7B727AC5CB000F4CDA2 /* SubstringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE5F7B627AC5CB000F4CDA2 /* SubstringView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		5DE759B327987A4E00002998 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		6D19F1CB2790BACA00D0CE14 /* DynamicTriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTriangleView.swift; sourceTree = "<group>"; };
 		6DDE124D27A33C2800B464F4 /* ArithmeticProgressionViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticProgressionViewTest.swift; sourceTree = "<group>"; };
+		6DE5F7B427AC5C3D00F4CDA2 /* SubstringViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubstringViewTest.swift; sourceTree = "<group>"; };
+		6DE5F7B627AC5CB000F4CDA2 /* SubstringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubstringView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 			children = (
 				6D19F1CB2790BACA00D0CE14 /* DynamicTriangleView.swift */,
 				3EEA56D027A32B290009A650 /* ArithmeticProgressionView.swift */,
+				6DE5F7B627AC5CB000F4CDA2 /* SubstringView.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 				3EC948A82790B44D00B68C96 /* KataClubTests.swift */,
 				3E21A4D92791F8CC009075A0 /* DynamicTriangleTests.swift */,
 				6DDE124D27A33C2800B464F4 /* ArithmeticProgressionViewTest.swift */,
+				6DE5F7B427AC5C3D00F4CDA2 /* SubstringViewTest.swift */,
 			);
 			path = KataClubTests;
 			sourceTree = "<group>";
@@ -281,6 +287,7 @@
 				3EC9489A2790B44C00B68C96 /* ContentView.swift in Sources */,
 				6D19F1CC2790BACA00D0CE14 /* DynamicTriangleView.swift in Sources */,
 				5D9347F827BAD60400915F0B /* MusicLibraryView.swift in Sources */,
+				6DE5F7B727AC5CB000F4CDA2 /* SubstringView.swift in Sources */,
 				5D9DEE7C279B0DB000D0B82D /* PodcastEpisodeView.swift in Sources */,
 				5DE759B22798703000002998 /* FeaturedAppHelperView.swift in Sources */,
 				3EC948982790B44C00B68C96 /* KataClubApp.swift in Sources */,
@@ -294,6 +301,7 @@
 			files = (
 				6DDE124E27A33C2800B464F4 /* ArithmeticProgressionViewTest.swift in Sources */,
 				3EC948A92790B44D00B68C96 /* KataClubTests.swift in Sources */,
+				6DE5F7B527AC5C3D00F4CDA2 /* SubstringViewTest.swift in Sources */,
 				3E21A4DA2791F8CC009075A0 /* DynamicTriangleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
