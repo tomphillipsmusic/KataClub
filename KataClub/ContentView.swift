@@ -42,6 +42,9 @@ struct ContentView: View {
                 NavigationLink(destination: SubstringView()) {
                     Text("Substring (Logic)")
                 }
+                NavigationLink(destination: ExtraCharacters()) {
+                    Text("Extra Characters (Logic)")
+                }
             }
             .navigationTitle("Kata Club")
         }
