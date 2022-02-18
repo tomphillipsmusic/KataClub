@@ -13,7 +13,7 @@ struct ArrayFactorsView: View {
 
     Example:
         Input: 18
-        Return: [1, 2, 3, 6, 9]
+        Return: [1, 2, 3, 6, 9, 18]
     
     """
     
@@ -36,7 +36,7 @@ struct ArrayFactorsView: View {
             if givenNumber != 0 {
                 Text("\(givenNumber)")
                 Divider()
-                Button("Clean Up"){
+                Button("factorize"){
                     arrayOfFactors = getFactorArray(givenNumber: givenNumber).description
                 }
                 Divider()
@@ -48,7 +48,7 @@ struct ArrayFactorsView: View {
     
     // TODO: Fill in the function to return an array of integer factors.
     func getFactorArray(givenNumber: Int) -> [Int] {
-        return []
+            return []
     }
 }
 
