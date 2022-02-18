@@ -50,7 +50,7 @@ struct ExtraCharacters: View {
     
     // TODO: Fill in the function to count how many times inputSubstring occurs within inputString
     func cleanUp(messyString: String) -> String {
-        return messyStringExample
+        return ""
     }
     
     func generateRandomInputs() -> String {
