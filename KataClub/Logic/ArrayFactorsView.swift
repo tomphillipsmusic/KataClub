@@ -22,7 +22,7 @@ struct ArrayFactorsView: View {
     
     var body: some View {
         VStack{
-            Text("Extra Characters")
+            Text("Array of Factors")
                 .font(.largeTitle)
             Text(instructions)
                 .padding([.leading, .trailing])
