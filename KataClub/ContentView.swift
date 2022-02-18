@@ -42,6 +42,9 @@ struct ContentView: View {
                 NavigationLink(destination: SubstringView()) {
                     Text("Substring (Logic)")
                 }
+                NavigationLink(destination: MusicLibraryHelperView()) {
+                    Text("Music Library+Playlists (Interface)")
+                }
             }
             .navigationTitle("Kata Club")
         }
