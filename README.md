@@ -130,7 +130,76 @@ VStack {
   <summary> Podcast Episode View </summary>
  
   ```
- LOL nice try!
+ VStack(alignment: .leading) {
+    
+    //Episode list title
+    HStack {
+        Text("Episodes")
+            .font(.title)
+            .fontWeight(.semibold)
+        Spacer()
+        Text("See All")
+            .font(.title3)
+            .foregroundColor(.highContrastPurple)
+    }
+    
+    Divider()
+        .padding(.bottom, 10.0)
+    
+    //Date grouping
+    HStack {
+        //Date
+        Text("DEC 22, 2021")
+            .fontWeight(.medium)
+        
+        //Interpunct
+        Text("·")
+            .fontWeight(.medium)
+        
+        //Explicit marking
+        Image(systemName: "e.square.fill")
+    }
+    .foregroundColor(.highContrastGray)
+    .font(.caption)
+    .padding(.bottom, 0.1)
+    
+    //Episode title
+    Text("May We Have This Dance?")
+        .font(.title3)
+        .fontWeight(.semibold)
+        .padding(.bottom, 0.1)
+    
+    //Episode description
+    Text("A jazz dance born in Harlem in the 1920s end up in a tiny Swedish town. What happens when Black dancers try to bring the Lindy Hop home?")
+        .foregroundColor(.highContrastGray)
+    
+    HStack {
+        //Play button
+        Image(systemName: "play.fill")
+            .font(.caption)
+            .foregroundColor(.highContrastPurple)
+            .padding(8.0)
+            .background {
+                Circle()
+                    .foregroundColor(.lightGray)
+        }
+        
+        //Length of time
+        Text("44 min")
+            .foregroundColor(.highContrastPurple)
+        
+        Spacer()
+        
+        //Downloaded symbol
+        Image(systemName: "arrow.down.circle.fill")
+            .font(.caption)
+            .foregroundColor(.gray)
+        
+        //See more button
+        Image(systemName: "ellipsis")
+            .foregroundColor(.gray)
+    }
+}
   ```
 </details>
 
@@ -271,4 +340,42 @@ VStack {
   ```
 </details>
 
-
+<details> 
+  <summary> Substring </summary>
+     
+  ### for loop method
+ 
+  ```
+    func calculateOccurrences(inputString:String, inputSubstring:String) -> Int {
+    //rule out Does Not Contain case
+    if !inputString.contains(inputSubstring) {
+        return 0
+    }
+    
+    //store count
+    var count = 0
+    
+    //check each substring within inputString
+    for index in 0...(inputString.count - inputSubstring.count) {
+        let lowerBound = String.Index(encodedOffset: index)
+        let upperBound = String.Index(encodedOffset: index + inputSubstring.count)
+        let substring = inputString[lowerBound..<upperBound]
+        
+        if String(substring) == inputSubstring {
+            count += 1
+        }
+    }
+    
+    return count
+}
+     
+  ```
+ 
+### One-liner
+ 
+  ```
+  func calculateOccurrences(inputString:String, inputSubstring:String) -> Int {
+        inputString.components(separatedBy: inputSubstring).count - 1
+    }
+  ```
+</details>
