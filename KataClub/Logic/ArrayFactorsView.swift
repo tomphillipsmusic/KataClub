@@ -11,7 +11,7 @@ struct ArrayFactorsView: View {
     let instructions: String = """
     You're given a positive integer. Return an array of all of its factors.
     
-    a factor is a number or algebraic expression that divides another number or expression evenly—i.e., with no remainder. For example, 3 and 6 are factors of 12 because 12 ÷ 3 = 4 exactly and 12 ÷ 6 = 2 exactly. The other factors of 12 are 1, 2, 4, and 12.
+    A factor is a number that divides another number evenly—i.e., with no remainder. For example, 3 and 6 are factors of 12 because 12 ÷ 3 = 4 exactly and 12 ÷ 6 = 2 exactly. The other factors of 12 are 1, 2, 4, and 12.
 
     Example:
         Input: 18
