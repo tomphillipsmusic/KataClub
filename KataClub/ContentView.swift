@@ -48,6 +48,9 @@ struct ContentView: View {
                 NavigationLink(destination: ExtraCharacters()) {
                     Text("Extra Characters (Logic)")
                 }
+                NavigationLink(destination: ArrayFactorsView()) {
+                    Text("Array of Factors (Logic)")
+                }
             }
             .navigationTitle("Kata Club")
         }
