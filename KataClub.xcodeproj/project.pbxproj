@@ -16,6 +16,8 @@
 		3EEA56D127A32B290009A650 /* ArithmeticProgressionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEA56D027A32B290009A650 /* ArithmeticProgressionView.swift */; };
 		5D0A033827C026C5002F5965 /* ArrayFactorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0A033727C026C5002F5965 /* ArrayFactorsView.swift */; };
 		5D0A033A27C049EC002F5965 /* ArrayFactorsViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0A033927C049EC002F5965 /* ArrayFactorsViewTest.swift */; };
+		5D87F1B127F334E8003207AB /* ValidParenthesesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D87F1B027F334E8003207AB /* ValidParenthesesView.swift */; };
+		5D87F1B327F34E86003207AB /* ValidParenthesesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D87F1B227F34E86003207AB /* ValidParenthesesTest.swift */; };
 		5D9347F827BAD60400915F0B /* MusicLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9347F727BAD60400915F0B /* MusicLibraryView.swift */; };
 		5D9347FA27BAD61100915F0B /* MusicPlaylistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9347F927BAD61100915F0B /* MusicPlaylistsView.swift */; };
 		5D9347FC27BAD61A00915F0B /* MusicLibraryHelperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9347FB27BAD61A00915F0B /* MusicLibraryHelperView.swift */; };
@@ -54,6 +56,8 @@
 		3EEA56D027A32B290009A650 /* ArithmeticProgressionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticProgressionView.swift; sourceTree = "<group>"; };
 		5D0A033727C026C5002F5965 /* ArrayFactorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayFactorsView.swift; sourceTree = "<group>"; };
 		5D0A033927C049EC002F5965 /* ArrayFactorsViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayFactorsViewTest.swift; sourceTree = "<group>"; };
+		5D87F1B027F334E8003207AB /* ValidParenthesesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidParenthesesView.swift; sourceTree = "<group>"; };
+		5D87F1B227F34E86003207AB /* ValidParenthesesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidParenthesesTest.swift; sourceTree = "<group>"; };
 		5D9347F727BAD60400915F0B /* MusicLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicLibraryView.swift; sourceTree = "<group>"; };
 		5D9347F927BAD61100915F0B /* MusicPlaylistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlaylistsView.swift; sourceTree = "<group>"; };
 		5D9347FB27BAD61A00915F0B /* MusicLibraryHelperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicLibraryHelperView.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 				6DE5F7B627AC5CB000F4CDA2 /* SubstringView.swift */,
 				5DA038D927BEA0E100025683 /* ExtraCharacters.swift */,
 				5D0A033727C026C5002F5965 /* ArrayFactorsView.swift */,
+				5D87F1B027F334E8003207AB /* ValidParenthesesView.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 				6DE5F7B427AC5C3D00F4CDA2 /* SubstringViewTest.swift */,
 				5DA038DB27BEEB6700025683 /* ExtraCharactersTest.swift */,
 				5D0A033927C049EC002F5965 /* ArrayFactorsViewTest.swift */,
+				5D87F1B227F34E86003207AB /* ValidParenthesesTest.swift */,
 			);
 			path = KataClubTests;
 			sourceTree = "<group>";
@@ -293,6 +299,7 @@
 			files = (
 				5D9347FC27BAD61A00915F0B /* MusicLibraryHelperView.swift in Sources */,
 				3EEA56D127A32B290009A650 /* ArithmeticProgressionView.swift in Sources */,
+				5D87F1B127F334E8003207AB /* ValidParenthesesView.swift in Sources */,
 				5DA038DA27BEA0E100025683 /* ExtraCharacters.swift in Sources */,
 				5DE759B02798702400002998 /* FeaturedAppView.swift in Sources */,
 				5D9DEE7A279B0BC200D0B82D /* PodcastEpisodeHelperView.swift in Sources */,
@@ -318,6 +325,7 @@
 				5DA038DC27BEEB6700025683 /* ExtraCharactersTest.swift in Sources */,
 				3EC948A92790B44D00B68C96 /* KataClubTests.swift in Sources */,
 				6DE5F7B527AC5C3D00F4CDA2 /* SubstringViewTest.swift in Sources */,
+				5D87F1B327F34E86003207AB /* ValidParenthesesTest.swift in Sources */,
 				3E21A4DA2791F8CC009075A0 /* DynamicTriangleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

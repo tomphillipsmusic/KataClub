@@ -51,6 +51,9 @@ struct ContentView: View {
                 NavigationLink(destination: ArrayFactorsView()) {
                     Text("Array of Factors (Logic)")
                 }
+                NavigationLink(destination: ValidParenthesesView()) {
+                    Text("Valid Parentheses (Logic)")
+                }
             }
             .navigationTitle("Kata Club")
         }
